@@ -7,7 +7,7 @@
   io.on('connection', async socket => {
     console.log('new user connected');
 
-    let messages = await Chat.find({});
+    let messages = await Chat.find({}).limit(5);
     socket.emit('load old msgs', messages);
 
     socket.on('new user', (data, cb) => {
