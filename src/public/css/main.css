@@ -1,9 +1,8 @@
 body {
-  background: #b92b27;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url(https://img.freepik.com/vector-gratis/fondo-geometrico-verde-abstracto_23-2148374529.jpg?w=1380&t=st=1667409397~exp=1667409997~hmac=d59a7c0d0e30e704f95fb2a5f459076c4e8e8f4989d054e66da3c96c08fe40d5);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 #contentWrap {
   display: none;
 }
@@ -15,4 +14,88 @@ body {
 .whisper {
   color: gray;
   font-style: italic;
+}
+.demo{
+  width:400px;
+  height:400px;
+  font-size:5em;
+  float:left;
+  text-align:center;
+}
+
+.rainbow-bg{
+  animation: rainbow-bg 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+.rainbow{
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+/* animations */
+@keyframes colorChange {
+  from {color: #000000;}
+  to {color: #b30000}
+}
+@keyframes rainbow-bg{
+		100%,0%{
+			color: rgb(255,0,0);
+		}
+		8%{
+			color: rgb(255,127,0);
+		}
+		16%{
+			color: rgb(255,255,0);
+		}
+		25%{
+			color: rgb(127,255,0);
+		}
+		33%{
+			color: rgb(0,255,0);
+		}
+		41%{
+			color: rgb(0,255,127);
+		}
+		50%{
+			color: rgb(0,255,255);
+		}
+		58%{
+			color: rgb(0,127,255);
+		}
+		66%{
+			color: rgb(0,0,255);
+		}
+		75%{
+			color: rgb(127,0,255);
+		}
+		83%{
+			color: rgb(255,0,255);
+		}
+		91%{
+			color: rgb(255,0,127);
+		}
+}
+
+
+#flechaEnviar {
+		animation-name: rainbow-bg;
+    animation-duration: 2s;
+		animation-iteration-count: infinite;
+}
+
+#InversionesTitulo {
+  font-size: 50px;
+  font-family: 'ribbon131 bt';
+  color: #000000;
+  text-align: center;
+  transition: font-size 1s;
+}
+
+#InversionesTitulo:hover {
+  animation-name: colorChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 70px;
 }
