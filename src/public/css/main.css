@@ -7,6 +7,11 @@ body {
   display: none;
 }
 
+.oldMsgs {
+  color: green;
+  font-family: monospace;
+}
+
 .error {
   color: red;
 }
@@ -98,4 +103,9 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   font-size: 70px;
+}
+#usernamesCard {
+  position: fixed;
+  top: 120px;
+  left: 20px;
 }
