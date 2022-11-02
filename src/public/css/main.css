@@ -35,7 +35,7 @@ body {
 
 /* animations */
 @keyframes colorChange {
-  from {color: #000000;}
+  from {color: #FFFFFF;}
   to {color: #b30000}
 }
 @keyframes rainbow-bg{
@@ -87,7 +87,7 @@ body {
 #InversionesTitulo {
   font-size: 50px;
   font-family: 'ribbon131 bt';
-  color: #000000;
+  color: #FFFFFF;
   text-align: center;
   transition: font-size 1s;
 }
