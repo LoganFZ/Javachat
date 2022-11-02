@@ -5,13 +5,14 @@ const express = require ('express');
 const socketio = require ('socket.io');
 
 const mongoose = require ("mongoose");
+require('dotenv').config()
 
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
 // db connection
-mongoose.connect('mongodb+srv://LoganFZ:KdRzO1n3MKAedPSJ@chat-javascript.adi4bpy.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(process.env.MongoDBURL)
   .then(db => console.log('db is connected'))
   .catch(err => console.log(err));
 
